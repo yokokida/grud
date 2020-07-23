@@ -17,6 +17,15 @@ dependencies:
   cloud_firestore: ^0.13.7
   firebase_core: ^0.4.5
   uuid: ^2.1.0
+  flutter_slidable: ^0.5.4
+  shared_preferences: ^0.5.8
+  intl: ^0.16.1
+  auto_size_text: ^2.1.0
+  provider_widget: ^0.1.0
+  font_awesome_flutter: ^8.8.1
+  google_fonts: ^1.1.0
+  firebase_auth: ^0.16.1
+
 
 dev_dependencies:
   flutter_test:
