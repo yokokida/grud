@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:crud/page/condition_route.dart';
+import 'package:crud/view/screen/condition.dart';
 import 'package:crud/model/favorite_model.dart';
 
 import 'package:crud/model/condition_model.dart';
@@ -57,9 +57,7 @@ class Search extends StatelessWidget {
           textAlign: TextAlign.right,
         ),
         trailing: IconButton(
-          icon: (_isFavo
-              ? Icon(Icons.favorite_border)
-              : Icon(Icons.favorite)),
+          icon: (_isFavo ? Icon(Icons.favorite_border) : Icon(Icons.favorite)),
           color: Colors.red[500],
           onPressed: toggleFavo(),
         ),

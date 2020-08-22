@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:crud/routes/search_route.dart';
+import 'package:crud/view/routes/search_route.dart';
 
 class Favorite extends StatelessWidget {
   @override

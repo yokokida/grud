@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:crud/page/chat_route.dart';
+import 'package:crud/view/screen/chat.dart';
 
 class Tile extends StatelessWidget {
   IconData icon;

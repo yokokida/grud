@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 //  _HomeState createState => _HomeState();
 //}
 
-class Home extends StatelessWidget {
+class MyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<AddApplicationModel>(
