@@ -1,11 +1,16 @@
-import 'package:crud/model/signup_model.dart';
+import 'package:crud/model/mypage_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+//class Home extends StatefulElement {
+//  Home(StatefulWidget widget) : super(widget);
+//  _HomeState createState => _HomeState();
+//}
 
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider<SignupModel>(
+    return ChangeNotifierProvider<AddApplicationModel>(
       create: (_) => AddApplicationModel(),
       child: Scaffold(
         appBar: AppBar(

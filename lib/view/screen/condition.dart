@@ -4,7 +4,8 @@ import 'package:intl/intl.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:crud/model/condition_model.dart';
 
-class ConditionDetail extends StatelessWidget {
+// ignore: must_be_immutable
+class ConditionDetail extends StatefulWidget {
   String img;
   String name;
   String bring;
@@ -41,6 +42,11 @@ class ConditionDetail extends StatelessWidget {
   }
 
   @override
+  _ConditionDetailState createState() => _ConditionDetailState();
+}
+
+class _ConditionDetailState extends State<ConditionDetail> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -69,7 +75,7 @@ class ConditionDetail extends StatelessWidget {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(bottom: 50.0),
-                  child: Image.network(this.img),
+                  child: Image.network(this.widget.img),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 20.0),
@@ -79,7 +85,7 @@ class ConditionDetail extends StatelessWidget {
                         padding: const EdgeInsets.only(right: 40.0),
                         child: Text('会社名'),
                       ),
-                      Text(this.name),
+                      Text(this.widget.name),
                     ],
                   ),
                 ),
@@ -90,13 +96,13 @@ class ConditionDetail extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 40.0),
                       child: Text('持ち物'),
                     ),
-                    Text(this.bring),
+                    Text(this.widget.bring),
                   ],
                 ),
 
                 Padding(
                   padding: const EdgeInsets.only(top: 200.0),
-                  child: Text(this.others),
+                  child: Text(this.widget.others),
                 ),
 //              Text(this.content),
 //              Text(this.attention),
